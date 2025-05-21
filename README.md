@@ -36,7 +36,7 @@ bundle install
 5. Start the development server:
 
 ```bash
-bundle exec jekyll serve
+bundle exec jekyll serve --livereload
 ```
 
 6. Open your browser and visit `http://localhost:4000`
