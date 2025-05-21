@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume | PhD Portfolio</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <!-- Add Tailwind CDN for development - will be replaced with local version later -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/assets/js/main.js" defer></script>
+</head>
+<body class="min-h-screen bg-gray-100">
+  <nav class="bg-gray-800 text-white p-4 shadow-md">
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="text-xl font-bold">PhD Portfolio</div>
+    
+    <!-- Mobile menu button -->
+    <div class="md:hidden">
+      <button 
+        id="menu-button"
+        class="text-white focus:outline-none"
+      >
+        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+          <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
+        </svg>
+      </button>
+    </div>
+    
+    <!-- Desktop navigation -->
+    <div class="hidden md:flex space-x-6">
+      <a 
+        href="/"
+        class="py-2 px-3 rounded transition-colors hover:bg-gray-700"
+      >
+        Home
+      </a>
+      <a 
+        href="/projects"
+        class="py-2 px-3 rounded transition-colors hover:bg-gray-700"
+      >
+        Projects
+      </a>
+      <a 
+        href="/resume"
+        class="py-2 px-3 rounded transition-colors bg-blue-600"
+      >
+        Resume
+      </a>
+    </div>
+  </div>
+  
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="md:hidden mt-2 bg-gray-700 rounded-md p-2 hidden">
+    <div class="flex flex-col space-y-2">
+      <a 
+        href="/"
+        class="py-2 px-3 rounded transition-colors hover:bg-gray-600"
+      >
+        Home
+      </a>
+      <a 
+        href="/projects"
+        class="py-2 px-3 rounded transition-colors hover:bg-gray-600"
+      >
+        Projects
+      </a>
+      <a 
+        href="/resume"
+        class="py-2 px-3 rounded transition-colors bg-blue-600"
+      >
+        Resume
+      </a>
+    </div>
+  </div>
+</nav>
+
+  
+  <main class="py-8">
+    <div class="container mx-auto px-4 py-8">
+  <h1 class="text-4xl font-bold mb-8">My Resume</h1>
+  
+  <!-- EDIT HERE: Update your education details -->
+  <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+    <h2 class="text-2xl font-bold mb-4">Education</h2>
+    <div class="mb-4">
+      <h3 class="text-xl font-semibold">Ph.D. in Engineering</h3>
+      <p class="text-gray-700">University of Wisconsin-Madison</p>
+      <p class="text-gray-600">Expected Graduation: [Year]</p>
+      <p class="mt-2">Dissertation: [Title of your dissertation]</p>
+      <p>Advisor: [Name of your advisor]</p>
+    </div>
+    
+    <div class="mb-4">
+      <h3 class="text-xl font-semibold">Master's Degree</h3>
+      <p class="text-gray-700">[University Name]</p>
+      <p class="text-gray-600">[Year]</p>
+      <p class="mt-2">Thesis: [Title of your thesis]</p>
+    </div>
+    
+    <div>
+      <h3 class="text-xl font-semibold">Bachelor's Degree</h3>
+      <p class="text-gray-700">[University Name]</p>
+      <p class="text-gray-600">[Year]</p>
+    </div>
+  </div>
+  
+  <!-- EDIT HERE: Update your research experience -->
+  <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+    <h2 class="text-2xl font-bold mb-4">Research Experience</h2>
+    <div class="mb-4">
+      <h3 class="text-xl font-semibold">Research Assistant</h3>
+      <p class="text-gray-700">[Laboratory/Department], University of Wisconsin-Madison</p>
+      <p class="text-gray-600">[Start Year] - Present</p>
+      <ul class="list-disc ml-6 mt-2">
+        <li>Description of research responsibilities and achievements</li>
+        <li>Another key research contribution</li>
+        <li>Additional significant research activity</li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3 class="text-xl font-semibold">Research Intern</h3>
+      <p class="text-gray-700">[Company/Institution Name]</p>
+      <p class="text-gray-600">[Year]</p>
+      <ul class="list-disc ml-6 mt-2">
+        <li>Description of internship responsibilities and achievements</li>
+        <li>Another key contribution during internship</li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- EDIT HERE: Update your publications -->
+  <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+    <h2 class="text-2xl font-bold mb-4">Publications</h2>
+    <ul class="list-disc ml-6">
+      <li class="mb-2">
+        <p>[Author(s)]. ([Year]). [Title of paper]. [Journal/Conference Name], [Volume(Issue)], [Pages].</p>
+      </li>
+      <li class="mb-2">
+        <p>[Author(s)]. ([Year]). [Title of paper]. [Journal/Conference Name], [Volume(Issue)], [Pages].</p>
+      </li>
+      <li>
+        <p>[Author(s)]. ([Year]). [Title of paper]. [Journal/Conference Name], [Volume(Issue)], [Pages].</p>
+      </li>
+    </ul>
+  </div>
+  
+  <!-- EDIT HERE: Update your skills -->
+  <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+    <h2 class="text-2xl font-bold mb-4">Skills</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Technical Skills</h3>
+        <ul class="list-disc ml-6">
+          <li>Skill 1</li>
+          <li>Skill 2</li>
+          <li>Skill 3</li>
+          <li>Skill 4</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Software &amp; Tools</h3>
+        <ul class="list-disc ml-6">
+          <li>Software 1</li>
+          <li>Software 2</li>
+          <li>Software 3</li>
+          <li>Software 4</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!-- EDIT HERE: Update your awards -->
+  <div class="bg-white rounded-lg shadow-md p-6">
+    <h2 class="text-2xl font-bold mb-4">Awards &amp; Honors</h2>
+    <ul class="list-disc ml-6">
+      <li class="mb-2">
+        <p><strong>[Award Name]</strong> - [Awarding Institution], [Year]</p>
+      </li>
+      <li class="mb-2">
+        <p><strong>[Award Name]</strong> - [Awarding Institution], [Year]</p>
+      </li>
+      <li>
+        <p><strong>[Award Name]</strong> - [Awarding Institution], [Year]</p>
+      </li>
+    </ul>
+  </div>
+  
+  <!-- EDIT HERE: Update your resume PDF link -->
+  <div class="mt-8">
+    <a href="/assets/files/resume.pdf" download="" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition-colors inline-block">
+      Download Full Resume (PDF)
+    </a>
+  </div>
+</div>
+
+  </main>
+  
+  <footer class="bg-gray-800 text-white py-6">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-4 md:mb-0">
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+      </div>
+      <div class="flex space-x-4">
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="hover:text-blue-300">LinkedIn</a>
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="hover:text-blue-300">GitHub</a>
+        <a href="mailto:your.email@wisc.edu" class="hover:text-blue-300">Email</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
